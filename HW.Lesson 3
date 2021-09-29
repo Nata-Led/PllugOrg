@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+// Створити пустий об’єкт
+const o = {};
+console.log(o);
+
+// Створити пустий об’єкт без прототипу
+const empty = Object.create(null);
+
+// Додати до об’єкта будь-які нові поля всіма відомими способами
+//First way
+let student = {}; 
+student.name = "Nataliya";
+student.age = 35;
+student.year = 4;
+student.education = "tech";
+
+// Second way
+let address = {};
+address["zip"] = 79008;
+address["city"] = "Lviv";
+address["street"] = "Zelena";
+
+//Third way
+let r = {zip: 79000};
+let t = {city: "Lviv"}
+let address1 = {
+    zip: r.zip,
+    city: t.city
+};
+
+// Створити пустий масив
+const a = [];
+
+// Створити пустий масив довжиною 100500 елементів
+const long = [];
+long.length = 100500;
+
+// Створити масив з декількома елементами
+const colors = ["Red", "Pink", "Purple", "White"];
+
+// Зробити заповнений масив пустим
+colors.length = 0;
+
+</script>
+
+</body>
+</html>
